@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1; /* 确保视频位于内容后面 */
+        object-fit: cover; /* 保证视频覆盖整个区域 */
+    }
+
+    </style>
+    </head>
+<body>
+    
+    <input type="button" value="start"  onclick="PVS()">
+    <input type="button" value="pause"  onclick="PVE()">
+    <video id="myVideo" src="1111.mp4"></video>
+    
+
+</body>
+
+    <script>
+       
+        function PVS() {
+        var video1 = document.getElementById("myVideo");
+            video1.play();
+            video1.loop=true;
+        }
+        function PVE() {
+        var video2 = document.getElementById("myVideo");
+            video2.pause();
+            
+        }
+
+    </script>
+</body>
+</html>
